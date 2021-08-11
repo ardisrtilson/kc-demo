@@ -20,6 +20,8 @@ After your credentials have been created, open a new tab in your terminal and ru
 
 Once you've logged into this page, you can open the dev-tools console to inspect the KeycloakService object, which contains the user's account information.
 
+IMPORTANT: If you close the docker image running on http://localhost:8080/, the realm, client, and users you create will be erased.  
+
 ## Installation Problems?
 
 You may be having problems because you need to install the Docker CLI. If so, you should then run: docker pull jboss/keycloak
