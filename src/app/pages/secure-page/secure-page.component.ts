@@ -18,10 +18,10 @@ export class SecurePageComponent implements OnInit {
 
   private initializeUserOptions(): void {
     this.user = this.keycloakService.getUsername();
+    console.log(this.keycloakService)
   }
 
   logout(): void {
     this.keycloakService.logout('http://localhost:4200/secure');
   }
-
 }
